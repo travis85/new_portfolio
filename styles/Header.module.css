@@ -1,0 +1,11 @@
+.container{
+    display: block;
+    justify-content: center;
+    background-color: rgb(229, 234, 245);
+    padding: 3rem;
+    position: relative;
+    
+   
+}
+
+
