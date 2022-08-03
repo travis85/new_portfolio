@@ -1,16 +1,21 @@
-import React from 'react'
+import React, { useState }from 'react'
 import Styles from '../styles/Intro.module.css'
 import { FaGithub } from 'react-icons/fa'
 import { BsLinkedin } from 'react-icons/bs'
 import Link from 'next/link'
-import {AiOutlineMail} from 'react-icons/ai'
+import { AiOutlineMail } from 'react-icons/ai'
+import ReactPlayer from "react-player"
 import Image from 'next/image'
+// import videoBg from "../public/assets/videoBg.mp4"
 
 export default function Intro() {
+
   return (
     <>
     <div className={Styles.container}>
-     
+       
+        
+
       <div className={Styles.introduction}>
         <h1>Hi, I'm Travis!</h1>
         <p>
@@ -19,7 +24,7 @@ export default function Intro() {
           lets speak further!
         </p>
         <div id={Styles.icons}>
-          <Link href="https://www.linkedin.com/in/travis-flake-98a734147/" >
+          <Link href="/emailForm" >
             <AiOutlineMail size="25px" color='rgb(10,102,194)' id={Styles.linkeInIcon}/>
           </Link>
           <Link href="https://www.linkedin.com/in/travis-flake-98a734147/" >
